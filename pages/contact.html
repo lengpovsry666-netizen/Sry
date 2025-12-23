@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ទាក់ទងសារមន្ទីរកាហ្វេ ដើម្បីកក្តល់មេគ ឬ សំណួរ។">
+    <title>ទាក់ទងយើងខ្ញុំ | សារមន្ទីរកាហ្វេ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>The Museum Café</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Index.html">ទំព័រដើម</a></li>
+                <li><a href="menu.html">ម៉ឹនុយ</a></li>
+                <li><a href="about.html">អំពីយើងខ្ញុំ</a></li>
+                <li><a href="contact.html" class="active">ទាក់ទងយើងខ្ញុំ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="padding: 60px 20px;">
+        <div class="hero-content">
+            <h2>ទាក់ទងយើង</h2>
+            <p>យើងរីករាយក្នុងការឮពីលោកអ្នក</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Contact Information -->
+                    <article class="contact-info">
+                        <h2>ទាក់ទងយើង</h2>
+                        
+                        <div class="info-group">
+                            <h3>អាសយដ្ឋាន</h3>
+                            <p>១២៣ មហាវិថីញាណសម្រាប់<br>
+                            ក្រុងសៀមរាប កម្ពុជា<br>
+                            ៧១</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>ទូរស័ព្ទ</h3>
+                            <p><a href="tel:+85523456789">(855) 23-456-789</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>អ៉ីមែល</h3>
+                            <p><a href="mailto:info@museumcafe.com">info@museumcafe.com</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>ម៉ោងដំណើរការ</h3>
+                            <p>ច័ន្ទដល់ព្រហស្បតិ៍: ៥:០០ - ១១:០០ យប់<br>
+                            សុក្រ - សៅរ៍: ៥:០០ - ១២:០០ យប់<br>
+                            អាទិត្យ: ៥:០០ - ១០:០០ យប់<br>
+                            <strong>បិទថ្ងៃច័ន្ទ</strong></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>មេឌៀសង្គម</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook">Facebook</a>
+                                <a href="#" aria-label="Instagram">Instagram</a>
+                                <a href="#" aria-label="Twitter">Twitter</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Contact Form -->
+                    <article class="contact-form-wrapper">
+                        <h2>កក្តល់តុម្ហូប ឬ សំណួរ</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">ឈ្មោះពេញលេញ *</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">អ៉ីមែល *</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">ទូរស័ព្ទ</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">ថ្ងៃដែលពេញលេញ *</label>
+                                    <input type="date" id="date" name="date" required aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="time">ម៉ោងដែលពេញលេញ *</label>
+                                    <input type="time" id="time" name="time" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests">ចំនួនភ្ញៀវ *</label>
+                                    <select id="guests" name="guests" required aria-required="true">
+                                        <option value="">ជ្រើសរើស...</option>
+                                        <option value="1">១ ភ្ញៀវ</option>
+                                        <option value="2">២ ភ្ញៀវ</option>
+                                        <option value="3">៣ ភ្ញៀវ</option>
+                                        <option value="4">៤ ភ្ញៀវ</option>
+                                        <option value="5">៥ ភ្ញៀវ</option>
+                                        <option value="6">៦ ភ្ញៀវ</option>
+                                        <option value="7">៧ ភ្ញៀវ</option>
+                                        <option value="8">៨ ភ្ញៀវ</option>
+                                        <option value="9+">៩+ ភ្ញៀវ</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="occasion">ពិសេស</label>
+                                    <select id="occasion" name="occasion">
+                                        <option value="">ជ្រើសរើស...</option>
+                                        <option value="birthday">ថ្ងៃកំណើត</option>
+                                        <option value="anniversary">ឆ្នាំលើកលែង</option>
+                                        <option value="engagement">ឈានចូលកូនម៉ា</option>
+                                        <option value="business">ការងារ</option>
+                                        <option value="other">ផ្សេងទៀត</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">សេចក្ដីសង្ខេប ឬ សំណួរ</label>
+                                <textarea id="message" name="message" rows="5" placeholder="ប្រាប់ពាក្យបញ្ជាក់ពិសេស ឬ សំណួរផ្សេងទៀត..."></textarea>
+                            </div>
+
+                            <button type="submit" class="cta-button">ផ្ញើសំណើរកក្តល់តុម្ហូប</button>
+                            <p class="form-note">* វាលដែលចាំបាច់ដែលបំពេញ។ យើងនឹងទាក់ទងលោកអ្នក ដើម្បីរៀបរាប់លម្អិត។</p>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Museum Café</h4>
+                    <p>ភោជនីយដ្ឋាននៃគុណភាព។</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ម៉ោងដំណើរការ</h4>
+                    <p>ច័ន្ទដល់ព្រហស្បតិ៍: ៥:០០ - ១១:០០ យប់<br>
+                    សុក្រ - សៅរ៍: ៥:០០ - ១២:០០ យប់<br>
+                    អាទិត្យ: ៥:០០ - ១០:០០ យប់<br>
+                    បិទ: ច័ន្ទ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ទាក់ទងយើងខ្ញុំ</h4>
+                    <p>ទូរស័ព្ទ: (855) 23-456-789<br>
+                    អ៉ីមែល: info@museumcafe.com<br>
+                    អាសយដ្ឋាន: ១២៣ រហូត ដើម</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ២០២៥ The Museum Café។ រក្សាសិទ្ធិ។</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-section {
+            padding: 60px 0;
+            background-color: var(--secondary-white);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info h2,
+        .contact-form-wrapper h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary-dark);
+        }
+
+        .info-group {
+            margin-bottom: 2rem;
+        }
+
+        .info-group h3 {
+            color: var(--primary-gold);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-group p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .info-group a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-group a:hover {
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .contact-form-wrapper {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: #d32f2f;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .contact-form button {
+            margin-top: 1rem;
+            align-self: flex-start;
+        }
+
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: -1rem;
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-section {
+                padding: 40px 0;
+            }
+
+            .contact-form-wrapper {
+                padding: 1rem;
+            }
+        }
+    </style>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const isValid = validateContactForm(form);
+            
+            if (isValid) {
+                alert('សូមស្វាគមន៍! យើងនឹងទាក់ទងលោកអ្នកឯរាក្ស។');
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>The Museum Café</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="padding: 60px 20px;">
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Contact Information -->
+                    <article class="contact-info">
+                        <h2>Get in Touch</h2>
+                        
+                        <div class="info-group">
+                            <h3>Address</h3>
+                            <p>123 Fine Dining Lane<br>
+                            City, State 12345<br>
+                            United States</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@prestige-dining.com">info@prestige-dining.com</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Hours</h3>
+                            <p>Monday - Thursday: 5:00 PM - 11:00 PM<br>
+                            Friday - Saturday: 5:00 PM - 12:00 AM<br>
+                            Sunday: 5:00 PM - 10:00 PM<br>
+                            <strong>Closed Mondays</strong></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook">Facebook</a>
+                                <a href="#" aria-label="Instagram">Instagram</a>
+                                <a href="#" aria-label="Twitter">Twitter</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Contact Form -->
+                    <article class="contact-form-wrapper">
+                        <h2>Make a Reservation or Inquiry</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date *</label>
+                                    <input type="date" id="date" name="date" required aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="time">Preferred Time *</label>
+                                    <input type="time" id="time" name="time" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests">Number of Guests *</label>
+                                    <select id="guests" name="guests" required aria-required="true">
+                                        <option value="">Select...</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7">7 Guests</option>
+                                        <option value="8">8 Guests</option>
+                                        <option value="9+">9+ Guests</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="occasion">Occasion</label>
+                                    <select id="occasion" name="occasion">
+                                        <option value="">Select...</option>
+                                        <option value="birthday">Birthday</option>
+                                        <option value="anniversary">Anniversary</option>
+                                        <option value="engagement">Engagement</option>
+                                        <option value="business">Business Meeting</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Special Requests or Inquiries</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about dietary restrictions, special occasions, or other requests..."></textarea>
+                            </div>
+
+                            <button type="submit" class="cta-button">Send Reservation Request</button>
+                            <p class="form-note">* Required fields. We will contact you to confirm your reservation.</p>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Museum Café</h4>
+                    <p>Fine dining restaurant dedicated to culinary excellence and exceptional hospitality.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 5:00 PM - 11:00 PM<br>
+                    Friday - Saturday: 5:00 PM - 12:00 AM<br>
+                    Sunday: 5:00 PM - 10:00 PM<br>
+                    Closed: Mondays</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: info@prestige-dining.com<br>
+                    Address: 123 Fine Dining Lane, City, State 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Museum Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-section {
+            padding: 60px 0;
+            background-color: var(--secondary-white);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info h2,
+        .contact-form-wrapper h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary-dark);
+        }
+
+        .info-group {
+            margin-bottom: 2rem;
+        }
+
+        .info-group h3 {
+            color: var(--primary-gold);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-group p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .info-group a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-group a:hover {
+            opacity: 0.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .contact-form-wrapper {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: #d32f2f;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .contact-form button {
+            margin-top: 1rem;
+            align-self: flex-start;
+        }
+
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: -1rem;
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-section {
+                padding: 40px 0;
+            }
+
+            .contact-form-wrapper {
+                padding: 1rem;
+            }
+        }
+    </style>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const isValid = validateContactForm(form);
+            
+            if (isValid) {
+                // Form submission would typically go here
+                // For now, show a success message
+                alert('Thank you for your reservation request! We will contact you shortly to confirm.');
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
